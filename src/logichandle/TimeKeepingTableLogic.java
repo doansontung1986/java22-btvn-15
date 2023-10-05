@@ -7,7 +7,6 @@ import entity.Worker;
 import utilities.ScannerUtility;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class TimeKeepingTableLogic {
@@ -121,8 +120,8 @@ public class TimeKeepingTableLogic {
 
     public void displaySalaryAllWorkers() {
         System.out.printf("%-12s | %-21s | %-12s |\n", "Mã công nhân", "Tên công nhân", "Lương");
-        for (int i = 0; i < this.timeKeepingTableList.size(); i++) {
-            this.timeKeepingTableList.get(i).displaySalary();
+        for (TimeKeepingTable timeKeepingTable : this.timeKeepingTableList) {
+            timeKeepingTable.displaySalary();
         }
     }
 }

@@ -13,14 +13,6 @@ public class WorkerLogic {
         workerList = new ArrayList<>();
     }
 
-    public List<Worker> getWorkerList() {
-        return workerList;
-    }
-
-    public void setWorkerList(List<Worker> workerList) {
-        this.workerList = new ArrayList<>(workerList);
-    }
-
     public void inputWorkers() {
         System.out.print("Nhập số lượng công nhân cần thêm: ");
         int numberOfWorker = ScannerUtility.inputValidInteger();

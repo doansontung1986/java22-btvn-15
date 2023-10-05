@@ -16,16 +16,8 @@ public class TimeKeepingTable implements Displayable {
         return worker;
     }
 
-    public void setWorker(Worker worker) {
-        this.worker = worker;
-    }
-
     public List<TimeKeeping> getTimeKeepingList() {
         return timeKeepingList;
-    }
-
-    public void setTimeKeepingList(List<TimeKeeping> timeKeepingList) {
-        this.timeKeepingList = new ArrayList<>(timeKeepingList);
     }
 
 

@@ -51,13 +51,13 @@ public class Factory implements Inputable, Displayable, Comparable<Factory> {
     @Override
     public void inputInfo() {
         System.out.println("Nhập tên xưởng: ");
-        this.factoryName = inputValidFactoryName();
+        this.setFactoryName(inputValidFactoryName());
 
         System.out.println("Nhập mô tả: ");
-        this.description = inputValidDescription();
+        this.setDescription(inputValidDescription());
 
         System.out.println("Nhập hệ số công việc: ");
-        this.rateOfWork = inputValidRateOfWork();
+        this.setRateOfWork(inputValidRateOfWork());
     }
 
     private String inputValidFactoryName() {

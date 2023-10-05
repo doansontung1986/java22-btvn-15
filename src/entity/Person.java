@@ -38,13 +38,13 @@ public abstract class Person implements Inputable, Displayable {
     @Override
     public void inputInfo() {
         System.out.println("Nhập họ tên: ");
-        this.name = inputValidName();
+        this.setName(inputValidName());
 
         System.out.println("Nhập địa chỉ: ");
-        this.address = inputValidAddress();
+        this.setAddress(inputValidAddress());
 
         System.out.println("Nhập số điện thoại: ");
-        this.phoneNumber = inputValidPhoneNumber();
+        this.setPhoneNumber(inputValidPhoneNumber());
     }
 
     private String inputValidName() {

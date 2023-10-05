@@ -13,15 +13,8 @@ public class TimeKeeping {
         return factory;
     }
 
-    public void setFactory(Factory factory) {
-        this.factory = factory;
-    }
-
     public int getWorkingDays() {
         return workingDays;
     }
 
-    public void setWorkingDays(int workingDays) {
-        this.workingDays = workingDays;
-    }
 }

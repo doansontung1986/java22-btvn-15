@@ -14,14 +14,6 @@ public class FactoryLogic {
         this.factoryList = new ArrayList<>();
     }
 
-    public List<Factory> getFactoryList() {
-        return factoryList;
-    }
-
-    public void setFactoryList(List<Factory> factoryList) {
-        this.factoryList = new ArrayList<>(factoryList);
-    }
-
     public void inputFactories() {
         System.out.print("Nhập số lượng xưởng cần thêm: ");
         int numberOfWorker = ScannerUtility.inputValidInteger();
